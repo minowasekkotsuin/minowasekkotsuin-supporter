@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>箕輪接骨院 | 院内セルフケアサポーターガイド</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            700: '#035388',
+                            800: '#0c4a6e',
+                        },
+                        accent: {
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans JP', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .bg-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased">
+
+    <!-- ナビゲーションバー -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 sm:h-20 items-center">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center text-lg sm:text-xl font-black shadow-md">
+                        箕
+                    </div>
+                    <div>
+                        <span class="block text-[10px] sm:text-xs font-bold text-brand-600 tracking-wider">箕輪接骨院</span>
+                        <h1 class="text-base sm:text-lg font-extrabold text-slate-900 leading-none">セルフケアサポーター</h1>
+                    </div>
+                </div>
+                
+                <nav class="hidden md:flex items-center gap-8 text-sm font-bold text-slate-600">
+                    <a href="#diagnosis" class="hover:text-brand-600 transition">お悩み診断</a>
+                    <a href="#products" class="hover:text-brand-600 transition">商品ラインナップ</a>
+                    <a href="#comparison" class="hover:text-brand-600 transition">製品比較</a>
+                </nav>
+
+                <div>
+                    <span class="inline-flex items-center gap-1.5 bg-brand-50 text-brand-700 px-3.5 py-1.5 rounded-full font-bold text-xs sm:text-sm border border-brand-200">
+                        <i class="fa-solid fa-store text-brand-600"></i>
+                        <span>全品 院内試着OK</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 患者様向けメッセージ（ヒーロー） -->
+    <section class="bg-gradient-to-b from-brand-50 via-sky-50 to-slate-50 py-12 md:py-16 relative overflow-hidden border-b border-brand-100">
+        <!-- 背景の優しくソフトな光効果 -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-white/80 via-transparent to-transparent pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 relative z-10">
+            <!-- バッジ：アクセントになる深みのあるブルー -->
+            <div>
+                <span class="inline-flex items-center gap-2 bg-brand-600 text-white font-bold px-4 py-1.5 rounded-full text-xs sm:text-sm shadow-sm">
+                    <i class="fa-solid fa-house-medical text-brand-200"></i>
+                    <span>施術効果を持続させるセルフケアアイテム</span>
+                </span>
+            </div>
+
+            <!-- 見出し：くっきり読みやすい濃色 -->
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 leading-tight tracking-wide">
+                普段のお悩み・目的に合った<br class="hidden sm:inline">サポーターをお選びいただけます
+            </h2>
+
+            <!-- 説明文：白ベースのカードで文字と背景を自然に分離 -->
+            <div class="bg-white/90 backdrop-blur-md rounded-2xl p-5 sm:p-6 border border-brand-200/80 max-w-2xl mx-auto text-center space-y-2 shadow-sm">
+                <p class="text-brand-900 text-sm sm:text-base font-bold leading-relaxed">
+                    「施術後の良い状態をキープしたい」「日常の負担を減らしたい」という方へ。
+                </p>
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                    当院でお取り扱いしているおすすめサポーターをご案内いたします。<br class="hidden sm:block">院内でいつでも試着可能です。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. お悩み診断 -->
+    <section id="diagnosis" class="py-12 md:py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-sm space-y-6">
+                <div class="text-center space-y-2">
+                    <span class="bg-brand-100 text-brand-700 text-xs font-bold px-3 py-1 rounded-full">かんたんセルフチェック</span>
+                    <h3 class="text-2xl sm:text-3xl font-black text-slate-900">1. お悩み診断</h3>
+                    <p class="text-slate-500 text-xs sm:text-sm">現在気になっている症状やご希望を選択してください（複数選択可）</p>
+                </div>
+
+                <!-- チェック項目 -->
+                <div id="quiz-options" class="grid sm:grid-cols-2 gap-3 pt-2">
+                    <label class="flex items-center p-4 bg-white border-2 border-slate-200 rounded-xl cursor-pointer hover:border-brand-500 transition gap-3 select-none shadow-sm">
+                        <input type="checkbox" value="pelvis" class="w-5 h-5 text-brand-600 rounded focus:ring-brand-500">
+                        <span class="font-bold text-sm text-slate-800">骨盤の揺らぎ・産後のぐらつき</span>
+                    </label>
+                    <label class="flex items-center p-4 bg-white border-2 border-slate-200 rounded-xl cursor-pointer hover:border-brand-500 transition gap-3 select-none shadow-sm">
+                        <input type="checkbox" value="heavy_back" class="w-5 h-5 text-brand-600 rounded focus:ring-brand-500">
+                        <span class="font-bold text-sm text-slate-800">しっかり腰を固定・背筋を伸ばしたい</span>
+                    </label>
+                    <label class="flex items-center p-4 bg-white border-2 border-slate-200 rounded-xl cursor-pointer hover:border-brand-500 transition gap-3 select-none shadow-sm">
+                        <input type="checkbox" value="light_back" class="w-5 h-5 text-brand-600 rounded focus:ring-brand-500">
+                        <span class="font-bold text-sm text-slate-800">軽めの装着感がいい・夏場ムレるのが嫌</span>
+                    </label>
+                    <label class="flex items-center p-4 bg-white border-2 border-slate-200 rounded-xl cursor-pointer hover:border-brand-500 transition gap-3 select-none shadow-sm">
+                        <input type="checkbox" value="calf" class="w-5 h-5 text-brand-600 rounded focus:ring-brand-500">
+                        <span class="font-bold text-sm text-slate-800">夕方の脚のむくみ・夜間の足のつり</span>
+                    </label>
+                </div>
+
+                <div class="text-center pt-2">
+                    <button id="run-diagnosis" class="bg-brand-600 hover:bg-brand-700 text-white font-bold px-8 py-3.5 rounded-xl shadow-md transition w-full sm:w-auto text-sm">
+                        おすすめサポーターを見る <i class="fa-solid fa-chevron-right ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- 診断結果表示枠 -->
+                <div id="diagnosis-result" class="hidden p-5 sm:p-6 bg-brand-50 rounded-2xl border border-brand-200 space-y-4">
+                    <h4 class="font-black text-brand-800 text-base sm:text-lg flex items-center gap-2">
+                        <i class="fa-solid fa-square-check text-brand-600"></i> あなたにおすすめのサポーター：
+                    </h4>
+                    <div id="result-items" class="space-y-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. 商品ラインナップ -->
+    <section id="products" class="py-12 md:py-16 bg-pattern border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-2">
+                <span class="text-brand-600 font-bold tracking-wider text-xs">LINEUP</span>
+                <h3 class="text-2xl md:text-3xl font-black text-slate-900">2. 商品ラインナップ</h3>
+                <p class="text-slate-600 text-sm">各商品の特徴とお悩みへの適正をご確認いただけます。</p>
+            </div>
+
+            <div class="mt-10 grid lg:grid-cols-3 gap-8">
+
+                <!-- 商品 1: コアベルト -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md flex flex-col justify-between hover:shadow-lg transition">
+                    <div>
+                        <div class="bg-gradient-to-r from-brand-600 to-brand-800 text-white p-6 relative">
+                            <span class="inline-block bg-white/20 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase shadow-sm mb-2">強力固定・姿勢補強</span>
+                            <h4 class="text-2xl font-black">コアベルト</h4>
+                            <div class="mt-4 flex items-baseline gap-1">
+                                <span class="text-3xl font-black">4,400</span>
+                                <span class="text-sm font-bold">円 (税込)</span>
+                            </div>
+                        </div>
+
+                        <div class="p-6 space-y-5">
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                                上半身が骨盤に「スッ」と乗る感覚。幅広ベースと締め込みベルトの2段構造で、骨盤のブレや歪みを強力にホールドします。
+                            </p>
+
+                            <div class="space-y-2 border-t border-slate-100 pt-4">
+                                <h5 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">主な特徴</h5>
+                                <ul class="space-y-1.5 text-xs font-bold text-slate-700">
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> 2段ダブルホールドで歪みを防止</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> 背部立体パネルで仙骨〜腰椎を補強</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> 股関節を妨げないカーブカット</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> 通気性メッシュ仕様で快適</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-slate-50 p-3 rounded-xl space-y-1 text-xs">
+                                <span class="font-bold text-slate-500">適したお悩み：</span>
+                                <p class="text-slate-700 font-medium">骨盤の歪み、産後のぐらつき、重い腰の不調、姿勢・猫背の改善</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 詳細移動ボタン -->
+                    <div class="p-6 pt-0">
+                        <a href="https://www.google.com/search?q=%E7%AE%95%E8%BC%AA%E6%8E%A5%E9%AA%A8%E9%99%A2+%E7%AE%95%E8%BC%AA%E9%8D%BC%E7%81%B8%E3%83%9E%E3%83%83%E3%82%B5%E3%83%BC%E3%82%B8%E9%99%A2&rlz=1C1HVRL_jaJP968JP968&oq=&aqs=chrome.1.69i59i450l8.3543491j0j15&sourceid=chrome&ie=UTF-8#lpc=lpc&prid=5359423639363601467" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-bold py-3 px-4 rounded-xl transition shadow-sm hover:shadow group text-sm">
+                            <span>商品の詳細を見る</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 商品 2: こかんせつすっきりベルト -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md flex flex-col justify-between hover:shadow-lg transition">
+                    <div>
+                        <div class="bg-gradient-to-r from-sky-500 to-brand-600 text-white p-6 relative">
+                            <span class="inline-block bg-white/20 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase shadow-sm mb-2">薄型・快適メッシュ</span>
+                            <h4 class="text-2xl font-black">こかんせつすっきりベルト</h4>
+                            <div class="mt-4 flex items-baseline gap-1">
+                                <span class="text-3xl font-black">4,290</span>
+                                <span class="text-sm font-bold">円 (税込)</span>
+                            </div>
+                        </div>
+
+                        <div class="p-6 space-y-5">
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                                「強い締め付けは苦手」「服に響かない薄型がいい」という方に。側面のマジックテープで締め具合も自由自在。
+                            </p>
+
+                            <div class="space-y-2 border-t border-slate-100 pt-4">
+                                <h5 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">主な特徴</h5>
+                                <ul class="space-y-1.5 text-xs font-bold text-slate-700">
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500"></i> 長時間着けても疲れない優しさ</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500"></i> 夏場も安心の高通気メッシュ素材</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500"></i> サイドテープで締め幅を簡単調整</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500"></i> ブラック / ソフトベージュの2色展開</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-slate-50 p-3 rounded-xl space-y-1 text-xs">
+                                <span class="font-bold text-slate-500">適したお悩み：</span>
+                                <p class="text-slate-700 font-medium">軽度の腰の張り、股関節の不調、夏場のムレ対策、長時間のデスクワーク</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 詳細移動ボタン -->
+                    <div class="p-6 pt-0">
+                        <a href="https://www.google.com/search?q=%E7%AE%95%E8%BC%AA%E6%8E%A5%E9%AA%A8%E9%99%A2+%E7%AE%95%E8%BC%AA%E9%8D%BC%E7%81%B8%E3%83%9E%E3%83%83%E3%82%B5%E3%83%BC%E3%82%B8%E9%99%A2&rlz=1C1HVRL_jaJP968JP968&oq=&aqs=chrome.1.69i59i450l8.3543491j0j15&sourceid=chrome&ie=UTF-8#lpc=lpc&prid=6597320753717576382" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-4 rounded-xl transition shadow-sm hover:shadow group text-sm">
+                            <span>商品の詳細を見る</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 商品 3: ふくらはぎ加圧サポーター -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md flex flex-col justify-between hover:shadow-lg transition">
+                    <div>
+                        <div class="bg-gradient-to-r from-emerald-600 to-teal-700 text-white p-6 relative">
+                            <span class="inline-block bg-white/20 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase shadow-sm mb-2">段階加圧・むくみ予防</span>
+                            <h4 class="text-2xl font-black">ふくらはぎ加圧サポーター</h4>
+                            <div class="mt-4 flex items-baseline gap-2">
+                                <span class="text-2xl font-black">2,090</span><span class="text-xs">円/1枚</span>
+                                <span class="text-xs font-bold bg-emerald-800/50 px-2 py-0.5 rounded">両足セット 3,980円</span>
+                            </div>
+                        </div>
+
+                        <div class="p-6 space-y-5">
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                                独自のシリコンテーピングラインが筋肉をサポート。夕方の重だるさや夜間の足のつり（こむら返り）をしっかり予防！
+                            </p>
+
+                            <div class="space-y-2 border-t border-slate-100 pt-4">
+                                <h5 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">主な特徴</h5>
+                                <ul class="space-y-1.5 text-xs font-bold text-slate-700">
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> シリコンテーピングで筋肉アシスト</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> 立ち仕事・歩行の負担を軽減</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> 両足セットなら200円お得</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> 年中使える快適通気素材</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-slate-50 p-3 rounded-xl space-y-1 text-xs">
+                                <span class="font-bold text-slate-500">適したお悩み：</span>
+                                <p class="text-slate-700 font-medium">脚のむくみ、こむら返り（足のつり）、立ち仕事・歩行時のだるさ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 詳細移動ボタン -->
+                    <div class="p-6 pt-0">
+                        <a href="https://www.google.com/search?q=%E7%AE%95%E8%BC%AA%E6%8E%A5%E9%AA%A8%E9%99%A2+%E7%AE%95%E8%BC%AA%E9%8D%BC%E7%81%B8%E3%83%9E%E3%83%83%E3%82%B5%E3%83%BC%E3%82%B8%E9%99%A2&rlz=1C1HVRL_jaJP968JP968&oq=&aqs=chrome.1.69i59i450l8.3543491j0j15&sourceid=chrome&ie=UTF-8#lpc=lpc&prid=-4019440268982241906" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl transition shadow-sm hover:shadow group text-sm">
+                            <span>商品の詳細を見る</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 製品比較 -->
+    <section id="comparison" class="py-12 md:py-16 bg-white border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-2">
+                <span class="text-brand-600 font-bold tracking-wider text-xs">COMPARISON</span>
+                <h3 class="text-2xl md:text-3xl font-black text-slate-900">3. 製品比較一覧表</h3>
+                <p class="text-slate-600 text-sm">目的や固定力、サイズ感の違いを比較いただけます。</p>
+            </div>
+
+            <div class="mt-10 overflow-x-auto">
+                <table class="w-full text-left border-collapse min-w-[650px]">
+                    <thead>
+                        <tr class="border-b-2 border-slate-200 bg-slate-50">
+                            <th class="p-4 text-slate-500 font-bold text-xs sm:text-sm w-1/4">項目</th>
+                            <th class="p-4 text-brand-700 font-black text-sm sm:text-base w-1/4">コアベルト</th>
+                            <th class="p-4 text-sky-700 font-black text-sm sm:text-base w-1/4">こかんせつすっきりベルト</th>
+                            <th class="p-4 text-emerald-700 font-black text-sm sm:text-base w-1/4">ふくらはぎ加圧サポーター</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-xs sm:text-sm">
+                        <tr>
+                            <td class="p-4 font-bold text-slate-700 bg-slate-50">メイン目的</td>
+                            <td class="p-4 text-slate-700 font-medium">骨盤固定・姿勢補強・強力腰ケア</td>
+                            <td class="p-4 text-slate-700 font-medium">股関節安定・軽度腰ケア・日常使い</td>
+                            <td class="p-4 text-slate-700 font-medium">血行アシスト・むくみ予防・足つり防ぐ</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold text-slate-700 bg-slate-50">固定力・ホールド感</td>
+                            <td class="p-4"><span class="font-bold text-brand-600">★★★★★</span> (強力)</td>
+                            <td class="p-4"><span class="font-bold text-sky-600">★★★☆☆</span> (優しくフィット)</td>
+                            <td class="p-4"><span class="font-bold text-emerald-600">★★★★☆</span> (段階加圧)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold text-slate-700 bg-slate-50">通気性・快適度</td>
+                            <td class="p-4 text-slate-700">★★★★☆ (メッシュ)</td>
+                            <td class="p-4 text-slate-700 font-bold text-sky-600">★★★★★ (高通気メッシュ)</td>
+                            <td class="p-4 text-slate-700">★★★★☆ (年間快適素材)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold text-slate-700 bg-slate-50">サイズ展開</td>
+                            <td class="p-4 text-slate-700">M / L / LL</td>
+                            <td class="p-4 text-slate-700">S / M / L / LL</td>
+                            <td class="p-4 text-slate-700">フリーサイズ（試着可能）</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold text-slate-700 bg-slate-50">販売価格</td>
+                            <td class="p-4 font-bold text-slate-900">4,400円 (税込)</td>
+                            <td class="p-4 font-bold text-slate-900">4,290円 (税込)</td>
+                            <td class="p-4 font-bold text-slate-900">1枚 2,090円 / 両足 3,980円</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 院内試着アナウンス -->
+    <section class="py-10 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-2xl mx-auto text-brand-200">
+                <i class="fa-solid fa-hand-holding-medical"></i>
+            </div>
+            <h4 class="text-xl sm:text-2xl font-bold">院内でいつでもお試しいただけます</h4>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-xl mx-auto">
+                「どのサイズが合うか分からない」「正しい着け方を知りたい」など、施術の際や受付にてお気軽にご相談ください。スタッフがフィッティングを行わせていただきます。
+            </p>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-slate-950 text-slate-500 py-8 border-t border-slate-800 text-xs text-center">
+        <div class="max-w-6xl mx-auto px-4 space-y-2">
+            <p class="font-bold text-slate-400">箕輪接骨院 鍼灸マッサージ院</p>
+            <p>&copy; Minowa Orthopedic Clinic. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript (インタラクティブ診断のロジック) -->
+    <script>
+        document.getElementById('run-diagnosis').addEventListener('click', function() {
+            const checkboxes = document.querySelectorAll('#quiz-options input[type="checkbox"]:checked');
+            const resultBox = document.getElementById('diagnosis-result');
+            const resultItems = document.getElementById('result-items');
+            
+            resultItems.innerHTML = '';
+            
+            if (checkboxes.length === 0) {
+                const alertModal = document.createElement('div');
+                alertModal.className = 'p-3 bg-red-50 text-red-700 text-xs rounded-lg font-bold border border-red-200 mt-2 text-center';
+                alertModal.innerText = '該当するお悩みにひとつ以上チェックを入れてください。';
+                resultBox.classList.remove('hidden');
+                resultItems.appendChild(alertModal);
+                return;
+            }
+
+            const selectedValues = Array.from(checkboxes).map(cb => cb.value);
+            let recommendations = [];
+
+            if (selectedValues.includes('pelvis') || selectedValues.includes('heavy_back')) {
+                recommendations.push({
+                    name: 'コアベルト',
+                    desc: '骨盤の強力固定・姿勢補強に最適。背筋がピンと伸び、腰の違和感をやわらげます。',
+                    price: '4,400円(税込)'
+                });
+            }
+
+            if (selectedValues.includes('light_back')) {
+                recommendations.push({
+                    name: 'こかんせつすっきりベルト',
+                    desc: '薄型メッシュでムレにくく、優しいフィット感。長時間の着用や家事・仕事中も快適です。',
+                    price: '4,290円(税込)'
+                });
+            }
+
+            if (selectedValues.includes('calf')) {
+                recommendations.push({
+                    name: 'ふくらはぎ加圧サポーター',
+                    desc: '段階加圧とシリコンラインで筋肉をサポート。夕方のむくみや夜間の足のつりを予防します。',
+                    price: '1枚 2,090円 / 両足 3,980円'
+                });
+            }
+
+            // 重複排除
+            const uniqueRecs = Array.from(new Set(recommendations.map(a => a.name)))
+                .map(name => recommendations.find(a => a.name === name));
+
+            uniqueRecs.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'p-4 bg-white rounded-xl border border-brand-200 shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-2 text-left';
+                card.innerHTML = `
+                    <div>
+                        <span class="font-black text-slate-900 text-base">${item.name}</span>
+                        <p class="text-xs text-slate-600 mt-0.5">${item.desc}</p>
+                    </div>
+                    <span class="text-xs font-bold bg-brand-100 text-brand-700 px-3 py-1 rounded-full whitespace-nowrap self-start sm:self-auto">${item.price}</span>
+                `;
+                resultItems.appendChild(card);
+            });
+
+            resultBox.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
