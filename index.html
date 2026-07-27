@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>箕輪接骨院 | 院内セルフケアサポーターガイド</title>
+    <title>箕輪接骨院 | セルフケアサポーターガイド</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,13 +81,11 @@
         </div>
     </header>
 
-    <!-- 患者様向けメッセージ（ヒーロー） -->
+    <!-- メッセージ（ヒーロー） -->
     <section class="bg-gradient-to-b from-brand-50 via-sky-50 to-slate-50 py-12 md:py-16 relative overflow-hidden border-b border-brand-100">
-        <!-- 背景の優しくソフトな光効果 -->
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-white/80 via-transparent to-transparent pointer-events-none"></div>
 
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 relative z-10">
-            <!-- バッジ：アクセントになる深みのあるブルー -->
             <div>
                 <span class="inline-flex items-center gap-2 bg-brand-600 text-white font-bold px-4 py-1.5 rounded-full text-xs sm:text-sm shadow-sm">
                     <i class="fa-solid fa-house-medical text-brand-200"></i>
@@ -95,12 +93,10 @@
                 </span>
             </div>
 
-            <!-- 見出し：くっきり読みやすい濃色 -->
             <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 leading-tight tracking-wide">
                 普段のお悩み・目的に合った<br class="hidden sm:inline">サポーターをお選びいただけます
             </h2>
 
-            <!-- 説明文：白ベースのカードで文字と背景を自然に分離 -->
             <div class="bg-white/90 backdrop-blur-md rounded-2xl p-5 sm:p-6 border border-brand-200/80 max-w-2xl mx-auto text-center space-y-2 shadow-sm">
                 <p class="text-brand-900 text-sm sm:text-base font-bold leading-relaxed">
                     「施術後の良い状態をキープしたい」「日常の負担を減らしたい」という方へ。
@@ -168,21 +164,27 @@
                 <p class="text-slate-600 text-sm">各商品の特徴とお悩みへの適正をご確認いただけます。</p>
             </div>
 
-            <div class="mt-10 grid lg:grid-cols-3 gap-8">
+            <!-- 商品グリッド（画面幅に合わせて柔軟に3列表示） -->
+            <div class="mt-10 grid md:grid-cols-3 gap-5 lg:gap-8">
 
                 <!-- 商品 1: コアベルト -->
                 <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md flex flex-col justify-between hover:shadow-lg transition">
                     <div>
-                        <div class="bg-gradient-to-r from-brand-600 to-brand-800 text-white p-6 relative">
+                        <div class="bg-gradient-to-r from-brand-600 to-brand-800 text-white p-5 sm:p-6 relative">
                             <span class="inline-block bg-white/20 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase shadow-sm mb-2">強力固定・姿勢補強</span>
-                            <h4 class="text-2xl font-black">コアベルト</h4>
-                            <div class="mt-4 flex items-baseline gap-1">
-                                <span class="text-3xl font-black">4,400</span>
-                                <span class="text-sm font-bold">円 (税込)</span>
+                            <h4 class="text-xl sm:text-2xl font-black">コアベルト</h4>
+                            <div class="mt-3 sm:mt-4 flex items-baseline gap-1">
+                                <span class="text-2xl sm:text-3xl font-black">4,400</span>
+                                <span class="text-xs sm:text-sm font-bold">円 (税込)</span>
                             </div>
                         </div>
 
-                        <div class="p-6 space-y-5">
+                        <div class="p-5 sm:p-6 space-y-4 sm:space-y-5">
+                            <!-- 商品画像エリア -->
+                            <div class="aspect-video w-full rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80 shadow-inner flex items-center justify-center relative group">
+                                <img src="images/コアベルト.jpg" alt="コアベルト（骨盤・姿勢補強）" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center p-4 text-xs font-bold text-slate-400\'><i class=\'fa-regular fa-image text-2xl mb-1 block\'></i>画像準備中<br>(images/コアベルト.jpg)</div>'">
+                            </div>
+
                             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
                                 上半身が骨盤に「スッ」と乗る感覚。幅広ベースと締め込みベルトの2段構造で、骨盤のブレや歪みを強力にホールドします。
                             </p>
@@ -203,29 +205,26 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- 詳細移動ボタン -->
-                    <div class="p-6 pt-0">
-                        <a href="https://www.google.com/search?q=%E7%AE%95%E8%BC%AA%E6%8E%A5%E9%AA%A8%E9%99%A2+%E7%AE%95%E8%BC%AA%E9%8D%BC%E7%81%B8%E3%83%9E%E3%83%83%E3%82%B5%E3%83%BC%E3%82%B8%E9%99%A2&rlz=1C1HVRL_jaJP968JP968&oq=&aqs=chrome.1.69i59i450l8.3543491j0j15&sourceid=chrome&ie=UTF-8#lpc=lpc&prid=5359423639363601467" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-bold py-3 px-4 rounded-xl transition shadow-sm hover:shadow group text-sm">
-                            <span>商品の詳細を見る</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
-                        </a>
-                    </div>
                 </div>
 
                 <!-- 商品 2: こかんせつすっきりベルト -->
                 <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md flex flex-col justify-between hover:shadow-lg transition">
                     <div>
-                        <div class="bg-gradient-to-r from-sky-500 to-brand-600 text-white p-6 relative">
+                        <div class="bg-gradient-to-r from-sky-500 to-brand-600 text-white p-5 sm:p-6 relative">
                             <span class="inline-block bg-white/20 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase shadow-sm mb-2">薄型・快適メッシュ</span>
-                            <h4 class="text-2xl font-black">こかんせつすっきりベルト</h4>
-                            <div class="mt-4 flex items-baseline gap-1">
-                                <span class="text-3xl font-black">4,290</span>
-                                <span class="text-sm font-bold">円 (税込)</span>
+                            <h4 class="text-xl sm:text-2xl font-black">こかんせつすっきりベルト</h4>
+                            <div class="mt-3 sm:mt-4 flex items-baseline gap-1">
+                                <span class="text-2xl sm:text-3xl font-black">4,290</span>
+                                <span class="text-xs sm:text-sm font-bold">円 (税込)</span>
                             </div>
                         </div>
 
-                        <div class="p-6 space-y-5">
+                        <div class="p-5 sm:p-6 space-y-4 sm:space-y-5">
+                            <!-- 商品画像エリア -->
+                            <div class="aspect-video w-full rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80 shadow-inner flex items-center justify-center relative group">
+                                <img src="images/こかんせつすっきりベルト.jpg" alt="こかんせつすっきりベルト" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center p-4 text-xs font-bold text-slate-400\'><i class=\'fa-regular fa-image text-2xl mb-1 block\'></i>画像準備中<br>(images/こかんせつすっきりベルト.jpg)</div>'">
+                            </div>
+
                             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
                                 「強い締め付けは苦手」「服に響かない薄型がいい」という方に。側面のマジックテープで締め具合も自由自在。
                             </p>
@@ -246,29 +245,26 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- 詳細移動ボタン -->
-                    <div class="p-6 pt-0">
-                        <a href="https://www.google.com/search?q=%E7%AE%95%E8%BC%AA%E6%8E%A5%E9%AA%A8%E9%99%A2+%E7%AE%95%E8%BC%AA%E9%8D%BC%E7%81%B8%E3%83%9E%E3%83%83%E3%82%B5%E3%83%BC%E3%82%B8%E9%99%A2&rlz=1C1HVRL_jaJP968JP968&oq=&aqs=chrome.1.69i59i450l8.3543491j0j15&sourceid=chrome&ie=UTF-8#lpc=lpc&prid=6597320753717576382" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-4 rounded-xl transition shadow-sm hover:shadow group text-sm">
-                            <span>商品の詳細を見る</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
-                        </a>
-                    </div>
                 </div>
 
                 <!-- 商品 3: ふくらはぎ加圧サポーター -->
                 <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md flex flex-col justify-between hover:shadow-lg transition">
                     <div>
-                        <div class="bg-gradient-to-r from-emerald-600 to-teal-700 text-white p-6 relative">
+                        <div class="bg-gradient-to-r from-emerald-600 to-teal-700 text-white p-5 sm:p-6 relative">
                             <span class="inline-block bg-white/20 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase shadow-sm mb-2">段階加圧・むくみ予防</span>
-                            <h4 class="text-2xl font-black">ふくらはぎ加圧サポーター</h4>
-                            <div class="mt-4 flex items-baseline gap-2">
-                                <span class="text-2xl font-black">2,090</span><span class="text-xs">円/1枚</span>
+                            <h4 class="text-xl sm:text-2xl font-black">ふくらはぎ加圧サポーター</h4>
+                            <div class="mt-3 sm:mt-4 flex items-baseline gap-2">
+                                <span class="text-xl sm:text-2xl font-black">2,090</span><span class="text-xs">円/1枚</span>
                                 <span class="text-xs font-bold bg-emerald-800/50 px-2 py-0.5 rounded">両足セット 3,980円</span>
                             </div>
                         </div>
 
-                        <div class="p-6 space-y-5">
+                        <div class="p-5 sm:p-6 space-y-4 sm:space-y-5">
+                            <!-- 商品画像エリア -->
+                            <div class="aspect-video w-full rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80 shadow-inner flex items-center justify-center relative group">
+                                <img src="images/ふくらはぎ加圧サポーター.png" alt="ふくらはぎ加圧サポーター" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center p-4 text-xs font-bold text-slate-400\'><i class=\'fa-regular fa-image text-2xl mb-1 block\'></i>画像準備中<br>(images/ふくらはぎ加圧サポーター.png)</div>'">
+                            </div>
+
                             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
                                 独自のシリコンテーピングラインが筋肉をサポート。夕方の重だるさや夜間の足のつり（こむら返り）をしっかり予防！
                             </p>
@@ -288,14 +284,6 @@
                                 <p class="text-slate-700 font-medium">脚のむくみ、こむら返り（足のつり）、立ち仕事・歩行時のだるさ</p>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- 詳細移動ボタン -->
-                    <div class="p-6 pt-0">
-                        <a href="https://www.google.com/search?q=%E7%AE%95%E8%BC%AA%E6%8E%A5%E9%AA%A8%E9%99%A2+%E7%AE%95%E8%BC%AA%E9%8D%BC%E7%81%B8%E3%83%9E%E3%83%83%E3%82%B5%E3%83%BC%E3%82%B8%E9%99%A2&rlz=1C1HVRL_jaJP968JP968&oq=&aqs=chrome.1.69i59i450l8.3543491j0j15&sourceid=chrome&ie=UTF-8#lpc=lpc&prid=-4019440268982241906" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl transition shadow-sm hover:shadow group text-sm">
-                            <span>商品の詳細を見る</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
-                        </a>
                     </div>
                 </div>
 
