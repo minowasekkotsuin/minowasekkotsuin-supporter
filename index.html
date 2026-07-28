@@ -164,7 +164,7 @@
                 <p class="text-slate-600 text-sm">各商品の特徴とお悩みへの適正をご確認いただけます。</p>
             </div>
 
-            <!-- 商品グリッド（画面幅に合わせて柔軟に3列表示） -->
+            <!-- 商品グリッド -->
             <div class="mt-10 grid md:grid-cols-3 gap-5 lg:gap-8">
 
                 <!-- 商品 1: コアベルト -->
@@ -180,28 +180,34 @@
                         </div>
 
                         <div class="p-5 sm:p-6 space-y-4 sm:space-y-5">
-                            <!-- 商品画像エリア -->
                             <div class="aspect-video w-full rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80 shadow-inner flex items-center justify-center relative group">
-                                <img src="images/core-belt.png" alt="コアベルト（骨盤・姿勢補強）" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center p-4 text-xs font-bold text-slate-400\'><i class=\'fa-regular fa-image text-2xl mb-1 block\'></i>画像準備中<br>(images/core-belt.png)</div>'">
+                                <img src="images/core-belt.png" alt="コアベルト（骨盤・姿勢補強）" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="if(this.src.includes('images/')){this.src='core-belt.png';}else{this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center p-4 text-xs font-bold text-slate-400\'><i class=\'fa-regular fa-image text-2xl mb-1 block\'></i>画像が見つかりません<br>(core-belt.png)</div>';}">
                             </div>
 
                             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                                上半身が骨盤に「スッ」と乗る感覚。幅広ベースと締め込みベルトの2段構造で、骨盤のブレや歪みを強力にホールドします。
+                                上半身が骨盤に「スッ」と乗る構造。骨盤の歪みやグラつき、産後の骨盤ケアを強力にホールドする高機能骨盤ベルトです。
                             </p>
 
                             <div class="space-y-2 border-t border-slate-100 pt-4">
                                 <h5 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">主な特徴</h5>
                                 <ul class="space-y-1.5 text-xs font-bold text-slate-700">
-                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> 2段ダブルホールドで歪みを防止</li>
-                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> 背部立体パネルで仙骨〜腰椎を補強</li>
-                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> 股関節を妨げないカーブカット</li>
-                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> 通気性メッシュ仕様で快適</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> 背面の立体構造とダブルホールドベルト</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> 下腹部と腰背部を適正位置に固定・姿勢補強</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> 股関節の動きを妨げないV字カーブカット</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> 長時間でも蒸れにくい高通気メッシュ仕様</li>
                                 </ul>
                             </div>
 
                             <div class="bg-slate-50 p-3 rounded-xl space-y-1 text-xs">
                                 <span class="font-bold text-slate-500">適したお悩み：</span>
                                 <p class="text-slate-700 font-medium">骨盤の歪み、産後のぐらつき、重い腰の不調、姿勢・猫背の改善</p>
+                            </div>
+
+                            <div class="pt-2">
+                                <button onclick="openProductModal('core-belt')" class="w-full bg-brand-50 hover:bg-brand-100 text-brand-700 font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm border border-brand-200 transition flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <span>商品の詳細を見る</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -220,9 +226,8 @@
                         </div>
 
                         <div class="p-5 sm:p-6 space-y-4 sm:space-y-5">
-                            <!-- 商品画像エリア -->
                             <div class="aspect-video w-full rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80 shadow-inner flex items-center justify-center relative group">
-                                <img src="images/kokansetsu.png" alt="こかんせつすっきりベルト" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center p-4 text-xs font-bold text-slate-400\'><i class=\'fa-regular fa-image text-2xl mb-1 block\'></i>画像準備中<br>(images/kokansetsu.png)</div>'">
+                                <img src="images/kokansetsu.png" alt="こかんせつすっきりベルト" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="if(this.src.includes('images/')){this.src='kokansetsu.png';}else{this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center p-4 text-xs font-bold text-slate-400\'><i class=\'fa-regular fa-image text-2xl mb-1 block\'></i>画像が見つかりません<br>(kokansetsu.png)</div>';}">
                             </div>
 
                             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
@@ -243,6 +248,13 @@
                                 <span class="font-bold text-slate-500">適したお悩み：</span>
                                 <p class="text-slate-700 font-medium">軽度の腰の張り、股関節の不調、夏場のムレ対策、長時間のデスクワーク</p>
                             </div>
+
+                            <div class="pt-2">
+                                <button onclick="openProductModal('kokansetsu')" class="w-full bg-sky-50 hover:bg-sky-100 text-sky-700 font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm border border-sky-200 transition flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <span>商品の詳細を見る</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -260,9 +272,8 @@
                         </div>
 
                         <div class="p-5 sm:p-6 space-y-4 sm:space-y-5">
-                            <!-- 商品画像エリア -->
                             <div class="aspect-video w-full rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80 shadow-inner flex items-center justify-center relative group">
-                                <img src="images/calf.png" alt="ふくらはぎ加圧サポーター" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center p-4 text-xs font-bold text-slate-400\'><i class=\'fa-regular fa-image text-2xl mb-1 block\'></i>画像準備中<br>(images/calf.png)</div>'">
+                                <img src="images/calf.png" alt="ふくらはぎ加圧サポーター" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="if(this.src.includes('images/')){this.src='calf.png';}else{this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center p-4 text-xs font-bold text-slate-400\'><i class=\'fa-regular fa-image text-2xl mb-1 block\'></i>画像が見つかりません<br>(calf.png)</div>';}">
                             </div>
 
                             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
@@ -273,7 +284,7 @@
                                 <h5 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">主な特徴</h5>
                                 <ul class="space-y-1.5 text-xs font-bold text-slate-700">
                                     <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> シリコンテーピングで筋肉アシスト</li>
-                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> 立ち仕事・歩行の負担を軽減</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> S〜LLの選べる4サイズ（片足1枚入）</li>
                                     <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> 両足セットなら200円お得</li>
                                     <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> 年中使える快適通気素材</li>
                                 </ul>
@@ -282,6 +293,13 @@
                             <div class="bg-slate-50 p-3 rounded-xl space-y-1 text-xs">
                                 <span class="font-bold text-slate-500">適したお悩み：</span>
                                 <p class="text-slate-700 font-medium">脚のむくみ、こむら返り（足のつり）、立ち仕事・歩行時のだるさ</p>
+                            </div>
+
+                            <div class="pt-2">
+                                <button onclick="openProductModal('calf')" class="w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm border border-emerald-200 transition flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <span>商品の詳細を見る</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -331,9 +349,9 @@
                         </tr>
                         <tr>
                             <td class="p-4 font-bold text-slate-700 bg-slate-50">サイズ展開</td>
-                            <td class="p-4 text-slate-700">M / L / LL</td>
                             <td class="p-4 text-slate-700">S / M / L / LL</td>
-                            <td class="p-4 text-slate-700">フリーサイズ（試着可能）</td>
+                            <td class="p-4 text-slate-700">S / M / L / LL</td>
+                            <td class="p-4 text-slate-700">S / M / L / LL（1枚入・試着可能）</td>
                         </tr>
                         <tr>
                             <td class="p-4 font-bold text-slate-700 bg-slate-50">販売価格</td>
@@ -368,69 +386,428 @@
         </div>
     </footer>
 
-    <!-- JavaScript (インタラクティブ診断のロジック) -->
-    <script>
-        document.getElementById('run-diagnosis').addEventListener('click', function() {
-            const checkboxes = document.querySelectorAll('#quiz-options input[type="checkbox"]:checked');
-            const resultBox = document.getElementById('diagnosis-result');
-            const resultItems = document.getElementById('result-items');
+    <!-- 商品詳細モーダルダイアログ -->
+    <div id="product-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-white w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden transform scale-95 transition-transform duration-300 max-h-[90vh] flex flex-col border border-slate-100" id="product-modal-card">
             
-            resultItems.innerHTML = '';
-            
-            if (checkboxes.length === 0) {
-                const alertModal = document.createElement('div');
-                alertModal.className = 'p-3 bg-red-50 text-red-700 text-xs rounded-lg font-bold border border-red-200 mt-2 text-center';
-                alertModal.innerText = '該当するお悩みにひとつ以上チェックを入れてください。';
-                resultBox.classList.remove('hidden');
-                resultItems.appendChild(alertModal);
-                return;
-            }
+            <!-- モーダルヘッダー -->
+            <div id="modal-header" class="p-5 sm:p-6 text-white flex items-center justify-between relative shrink-0 shadow-md transition-all duration-300">
+                <div class="space-y-1 z-10">
+                    <span id="modal-category" class="inline-block px-3 py-0.5 rounded-full text-[11px] font-extrabold bg-white/25 backdrop-blur-md text-white shadow-sm border border-white/20"></span>
+                    <h3 id="modal-title" class="text-xl sm:text-2xl font-black leading-tight drop-shadow-sm"></h3>
+                </div>
+                <button onclick="closeProductModal()" class="w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center transition text-lg focus:outline-none backdrop-blur-sm shadow-sm z-10">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
 
-            const selectedValues = Array.from(checkboxes).map(cb => cb.value);
-            let recommendations = [];
-
-            if (selectedValues.includes('pelvis') || selectedValues.includes('heavy_back')) {
-                recommendations.push({
-                    name: 'コアベルト',
-                    desc: '骨盤の強力固定・姿勢補強に最適。背筋がピンと伸び、腰の違和感をやわらげます。',
-                    price: '4,400円(税込)'
-                });
-            }
-
-            if (selectedValues.includes('light_back')) {
-                recommendations.push({
-                    name: 'こかんせつすっきりベルト',
-                    desc: '薄型メッシュでムレにくく、優しいフィット感。長時間の着用や家事・仕事中も快適です。',
-                    price: '4,290円(税込)'
-                });
-            }
-
-            if (selectedValues.includes('calf')) {
-                recommendations.push({
-                    name: 'ふくらはぎ加圧サポーター',
-                    desc: '段階加圧とシリコンラインで筋肉をサポート。夕方のむくみや夜間の足のつりを予防します。',
-                    price: '1枚 2,090円 / 両足 3,980円'
-                });
-            }
-
-            // 重複排除
-            const uniqueRecs = Array.from(new Set(recommendations.map(a => a.name)))
-                .map(name => recommendations.find(a => a.name === name));
-
-            uniqueRecs.forEach(item => {
-                const card = document.createElement('div');
-                card.className = 'p-4 bg-white rounded-xl border border-brand-200 shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-2 text-left';
-                card.innerHTML = `
-                    <div>
-                        <span class="font-black text-slate-900 text-base">${item.name}</span>
-                        <p class="text-xs text-slate-600 mt-0.5">${item.desc}</p>
+            <!-- モーダル本文 -->
+            <div class="p-5 sm:p-6 space-y-6 overflow-y-auto text-xs sm:text-sm">
+                <!-- 画像 ＋ 基本スペック -->
+                <div class="grid sm:grid-cols-2 gap-4 items-center">
+                    <div class="aspect-video sm:aspect-square w-full rounded-2xl overflow-hidden bg-slate-100 border border-slate-200 shadow-sm relative group flex items-center justify-center">
+                        <img id="modal-image" src="" alt="" class="w-full h-full object-cover">
                     </div>
-                    <span class="text-xs font-bold bg-brand-100 text-brand-700 px-3 py-1 rounded-full whitespace-nowrap self-start sm:self-auto">${item.price}</span>
-                `;
-                resultItems.appendChild(card);
+                    <div class="space-y-3">
+                        <div class="bg-gradient-to-br from-amber-500/10 via-orange-500/10 to-amber-500/5 p-4 rounded-2xl border border-amber-200/80 shadow-sm">
+                            <span class="text-[11px] text-amber-800 font-bold block flex items-center gap-1.5">
+                                <i class="fa-solid fa-tag text-amber-600"></i> 価格（税込）
+                            </span>
+                            <p id="modal-price" class="text-2xl sm:text-3xl font-black text-amber-900 mt-1 drop-shadow-xs"></p>
+                        </div>
+                        <div class="bg-gradient-to-br from-sky-50 to-blue-50/60 p-3.5 rounded-2xl border border-sky-200/80 shadow-sm">
+                            <span class="text-[11px] text-sky-800 font-bold block flex items-center gap-1.5">
+                                <i class="fa-solid fa-ruler-combined text-sky-600"></i> サイズ展開
+                            </span>
+                            <p id="modal-sizes" class="text-xs sm:text-sm font-bold text-slate-800 mt-0.5"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 商品説明 -->
+                <div class="space-y-2">
+                    <h4 class="font-bold text-slate-900 flex items-center gap-2 text-sm sm:text-base">
+                        <span class="w-2.5 h-6 rounded-full bg-gradient-to-b from-brand-500 to-brand-700"></span>
+                        <span>商品の特徴</span>
+                    </h4>
+                    <p id="modal-description" class="text-slate-600 leading-relaxed bg-slate-50/80 p-3.5 rounded-2xl border border-slate-100"></p>
+                </div>
+
+                <!-- 特徴リスト -->
+                <div class="space-y-2">
+                    <h4 class="font-bold text-slate-900 flex items-center gap-2 text-sm sm:text-base">
+                        <span class="w-2.5 h-6 rounded-full bg-gradient-to-b from-brand-500 to-brand-700"></span>
+                        <span>主な機能・メリット</span>
+                    </h4>
+                    <ul id="modal-features" class="space-y-2 text-slate-700 font-medium"></ul>
+                </div>
+
+                <!-- このような方におすすめ -->
+                <div id="modal-targets-container" class="space-y-2 hidden">
+                    <h4 class="font-bold text-slate-900 flex items-center gap-2 text-sm sm:text-base">
+                        <span class="w-2.5 h-6 rounded-full bg-gradient-to-b from-brand-500 to-brand-700"></span>
+                        <span>このような方におすすめ</span>
+                    </h4>
+                    <ul id="modal-targets" class="grid sm:grid-cols-2 gap-2 text-slate-700 font-medium"></ul>
+                </div>
+
+                <!-- 詳細サイズ表 -->
+                <div id="modal-size-table-container" class="space-y-2 hidden">
+                    <h4 class="font-bold text-slate-900 flex items-center gap-2 text-sm sm:text-base">
+                        <span class="w-2.5 h-6 rounded-full bg-gradient-to-b from-brand-500 to-brand-700"></span>
+                        <span>詳細サイズ表</span>
+                    </h4>
+                    <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
+                        <table class="w-full text-left text-xs">
+                            <thead class="bg-gradient-to-r from-slate-100 to-slate-200/80 text-slate-800 font-bold border-b border-slate-200">
+                                <tr>
+                                    <th class="p-3 w-1/3">サイズ</th>
+                                    <th class="p-3">計測部位（目安）</th>
+                                </tr>
+                            </thead>
+                            <tbody id="modal-size-table-body" class="divide-y divide-slate-100 bg-white"></tbody>
+                        </table>
+                    </div>
+                    <p id="modal-size-note" class="text-[11px] text-slate-500 mt-1 leading-relaxed bg-amber-50/50 p-2.5 rounded-xl border border-amber-100/60"></p>
+                </div>
+
+                <!-- 仕様・お手入れ -->
+                <div id="modal-specs-container" class="space-y-2 hidden">
+                    <h4 class="font-bold text-slate-900 flex items-center gap-2 text-sm sm:text-base">
+                        <span class="w-2.5 h-6 rounded-full bg-gradient-to-b from-brand-500 to-brand-700"></span>
+                        <span>商品詳細仕様</span>
+                    </h4>
+                    <div id="modal-specs" class="bg-slate-50 p-3.5 rounded-2xl border border-slate-100 space-y-1.5 text-xs text-slate-700"></div>
+                </div>
+
+                <!-- 試着のご案内 -->
+                <div class="p-4 bg-gradient-to-r from-amber-500/10 via-amber-50 to-orange-500/10 rounded-2xl border border-amber-200 flex items-start gap-3 shadow-xs">
+                    <div class="w-8 h-8 rounded-xl bg-amber-500 text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+                        <i class="fa-solid fa-hand-holding-medical text-sm"></i>
+                    </div>
+                    <div class="space-y-1">
+                        <p class="font-bold text-amber-950 text-xs sm:text-sm">当院でのフィッティング・試着について</p>
+                        <p id="modal-trial-text" class="text-amber-900 text-[11px] sm:text-xs leading-relaxed">
+                            当院では、患者様のお体に合わせた正しい装着方法の指導や、サイズのフィッティングを無料で行っております。気になる方は施術時にお気軽にお声がけください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- モーダルフッター -->
+            <div class="p-4 bg-slate-50 border-t border-slate-100 text-right shrink-0">
+                <button onclick="closeProductModal()" class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold px-7 py-2.5 rounded-xl transition text-xs sm:text-sm shadow-xs">
+                    閉じる
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript (インタラクティブ診断 & モーダルロジック) -->
+    <script>
+        // 商品詳細データ定義
+        const productDetails = {
+            'core-belt': {
+                name: '体幹安定・腰痛予防用 コアベルト（Core Belt）',
+                category: '骨盤・体幹サポート',
+                price: '4,400円 (税込)',
+                sizes: 'S / M / L / LL (XL)',
+                image: 'images/core-belt.png',
+                fallbackImage: 'core-belt.png',
+                headerBg: 'bg-gradient-to-r from-brand-600 via-brand-700 to-indigo-700',
+                checkColor: 'text-brand-600',
+                description: '当院が自信を持ってお勧めする「コアベルト」は、日常の動作や施術効果の維持をサポートするために開発された高機能サポートベルトです。',
+                features: [
+                    '体幹（コア）の安定: 骨盤を適切な位置に固定し、体幹のブレを抑えることで、腰への負担を大幅に軽減します。',
+                    '抜群のフィット感と通気性: 蒸れにくい軽量素材を採用。日常の動きを妨げず、長時間の着用でも快適です。',
+                    '簡単装着・強力固定: ダブルギア構造（滑車システム）により、少ない力でギュッとしっかり締め付けることが可能です。',
+                    '施術効果の長持ちに: 骨盤矯正や手技療法で整えたお体を、日常生活の中で正しい状態にキープするサポートをします。'
+                ],
+                targets: [
+                    '立ち仕事やデスクワークで腰に負担がかかっている方',
+                    '姿勢の崩れや猫背が気になる方',
+                    '重い荷物を持つことや、家事・育児で体を頻繁に動かす方',
+                    '施術後の良い状態を長持ちさせたい方',
+                    '車の運転や移動が多い方'
+                ],
+                sizeTable: [
+                    { size: 'S', range: '60cm 〜 75cm' },
+                    { size: 'M', range: '75cm 〜 90cm' },
+                    { size: 'L', range: '90cm 〜 105cm（最も選ばれているサイズです）' },
+                    { size: 'LL (XL)', range: '105cm 〜 120cm' }
+                ],
+                sizeNote: '※サイズの選び方の注意点：ウエスト（くびれ部分）ではなく、骨盤の一番出っ張っている骨のまわりをメジャーで計測してください。2つのサイズに該当する場合は、大きい方のサイズをおすすめしております。',
+                specs: [
+                    { label: 'カラー', val: 'ブラック' },
+                    { label: '素材', val: 'ナイロン、ポリエステル、ポリウレタン（通気性メッシュ構造）' },
+                    { label: 'お手入れ方法', val: '手洗い可能（中性洗剤を使用し、陰干ししてください）' }
+                ],
+                trialText: '当院では、患者様のお体に合わせた正しい装着方法の指導や、サイズのフィッティングを無料で行っております。気になる方は施術時にお気軽にお声がけください。'
+            },
+            'kokansetsu': {
+                name: '股関節の痛み・ぐらつき軽減 こかんせつすっきりベルト',
+                category: '股関節・腰・薄型サポート',
+                price: '4,290円 (税込)',
+                sizes: 'S / M / L / LL',
+                image: 'images/kokansetsu.png',
+                fallbackImage: 'kokansetsu.png',
+                headerBg: 'bg-gradient-to-r from-sky-500 via-teal-500 to-brand-600',
+                checkColor: 'text-sky-600',
+                description: '「股関節の痛みで踏み込みがつらい」「ガチガチのコルセットは苦しくて苦手」「服の下に目立たず着けたい」という患者様のお声から誕生した当院推奨の股関節サポーターです。股関節と骨盤周りを優しく固定し、歩行や立ち上がり時の「グラつき・不快感」を軽減します。',
+                features: [
+                    '股関節の位置を適正サポート: 大転子（股関節の横の骨）周辺を優しく圧迫固定し、歩く・立ち上がる時の関節の横ブレを防ぎます。',
+                    'サイドの調整テープで締める強さを微調整: 側面のマジックテープにより、その日の体調や好みのフィット感に合わせて無段階で調整が可能です。',
+                    '薄型＆高通気メッシュ素材: 衣服の下に装着してもシルエットに響きにくく、夏場や長時間のデスクワーク・家事でも蒸れずに快適です。',
+                    '選べる2つのカラー: 日常の服装になじむソフトベージュと、引き締まったブラックをご用意しています。'
+                ],
+                targets: [
+                    '歩き始めや階段の昇り降りで股関節に違和感・痛みがある方',
+                    'ガチガチに固定される強い締め付け感が苦手な方',
+                    '仕事着や普段着の下に目立たずサポーターをつけたい方',
+                    '長時間のデスクワークや立ち仕事で腰・股関節周りが重だるい方',
+                    '産後や加齢による股関節のぐらつきが気になる方'
+                ],
+                sizeTable: [
+                    { size: 'S', range: '骨盤周囲 70cm 〜 85cm' },
+                    { size: 'M', range: '骨盤周囲 80cm 〜 95cm' },
+                    { size: 'L', range: '骨盤周囲 90cm 〜 105cm' },
+                    { size: 'LL', range: '骨盤周囲 100cm 〜 115cm' }
+                ],
+                sizeNote: '※骨盤の一番出っ張っている骨（大転子付近）の周囲を計測してください。強い締め付け感を避けたい場合は、ワンサイズ大きめをお選びいただくのがおすすめです。',
+                specs: [
+                    { label: 'カラー', val: 'ソフトベージュ / ブラック' },
+                    { label: '素材', val: 'ナイロン、ポリエステル、ポリウレタン（高通気性メッシュ構造）' },
+                    { label: 'お手入れ方法', val: '面ファスナーを留めた状態で、中性洗剤で優しく手洗い（陰干し）してください。' }
+                ],
+                trialText: '当院では試着用サンプルを全サイズご用意しております。「実際のつけ心地を試してみたい」「締め付け感を確認したい」という方は、施術の際に気軽にお申し付けください。'
+            },
+            'calf': {
+                name: '血行促進＆むくみ・こむら返り予防 ふくらはぎ加圧サポーター',
+                category: '段階加圧・筋肉アシスト',
+                price: '1枚 2,090円 / 両足セット 3,980円 (税込)',
+                sizes: 'S / M / L / LL (1枚入り・両足兼用)',
+                image: 'images/calf.png',
+                fallbackImage: 'calf.png',
+                headerBg: 'bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-700',
+                checkColor: 'text-emerald-600',
+                description: '「夕方になると足がパンパンに張る」「夜中に突然足がつって激痛で目が覚める（こむら返り）」「立ち仕事で脚がだるい」という方へ。ふくらはぎの第二の心臓と呼ばれる筋ポンプ機能を補い、血流とリンパの流れをスムーズに促す段階加圧サポーターです（1枚入り/片足分）。',
+                features: [
+                    '独自シリコンテーピングライン: ふくらはぎの筋肉構造に合わせたシリコンラインが、歩行時や運動時の無駄な筋肉のブレを抑制し疲労を防ぎます。',
+                    '足首から膝下への段階的プレッシャー: 下から上へ向かって加圧を変えることで、下半身に溜まりがちな血液・水分の上昇をアシストします。',
+                    '夜間の「足つり（こむら返り）」を予防: 就寝中の急な筋肉の収縮を防ぎ、朝までグッスリ休める環境を整えます。',
+                    'お得な両足セット販売: 左右セットでのご購入なら、単品（2,090円×2）より200円お得な3,980円でご購入いただけます。'
+                ],
+                targets: [
+                    '長時間の立ち仕事やデスクワークで夕方足がむくむ方',
+                    '夜間や明け方に足がつって（こむら返り）目が覚めてしまう方',
+                    'ウォーキング、旅行、スポーツで脚の疲労が抜けにくい方',
+                    '足元の冷えや血行不良にお悩みの方'
+                ],
+                sizeTable: [
+                    { size: 'S', range: 'ふくらはぎ周り 21cm 〜 28cm（幅10.5cm / 高さ30cm）' },
+                    { size: 'M', range: 'ふくらはぎ周り 28cm 〜 35cm（幅11.5cm / 高さ30cm）' },
+                    { size: 'L', range: 'ふくらはぎ周り 35cm 〜 42cm（幅12.5cm / 高さ30cm）' },
+                    { size: 'LL', range: 'ふくらはぎ周り 42cm 〜 49cm（幅13.5cm / 高さ30cm）' }
+                ],
+                sizeNote: '※ふくらはぎの一番太い部分の周囲をメジャーで計測してください。幅は製品の上縁部分のサイズです。',
+                specs: [
+                    { label: '内容量', val: '1枚入り（片足分）' },
+                    { label: 'カラー', val: 'ブラック' },
+                    { label: '素材', val: 'ナイロン、ポリウレタン、シリコン（抗菌防臭・速乾通気素材）' },
+                    { label: 'お手入れ方法', val: '洗濯ネットに入れて洗濯機で洗えます（シリコン保護のため乾燥機のご使用はお控えください）。' }
+                ],
+                trialText: '院内にてサンプルのご試着が可能です。実際に装着して歩いていただくことで、足の軽さやテーピングラインのサポート力を実感していただけます。'
+            }
+        };
+
+        // モーダルを開く関数
+        function openProductModal(key) {
+            const item = productDetails[key];
+            if (!item) return;
+
+            const modalHeader = document.getElementById('modal-header');
+            modalHeader.className = `p-5 sm:p-6 text-white flex items-center justify-between relative shrink-0 shadow-md transition-all duration-300 ${item.headerBg || 'bg-gradient-to-r from-brand-600 via-brand-700 to-indigo-700'}`;
+
+            document.getElementById('modal-title').innerText = item.name;
+            document.getElementById('modal-category').innerText = item.category;
+            document.getElementById('modal-price').innerText = item.price;
+            document.getElementById('modal-sizes').innerText = item.sizes;
+            document.getElementById('modal-description').innerText = item.description;
+
+            if (item.trialText) {
+                document.getElementById('modal-trial-text').innerText = item.trialText;
+            }
+
+            // 画像の同期設定とフォールバック
+            const modalImg = document.getElementById('modal-image');
+            modalImg.style.display = 'block';
+            modalImg.alt = item.name;
+            modalImg.src = item.image;
+            modalImg.onerror = function() {
+                this.onerror = null;
+                if (item.fallbackImage && this.src !== item.fallbackImage) {
+                    this.src = item.fallbackImage;
+                } else {
+                    this.style.display = 'none';
+                    if (!this.parentElement.querySelector('.fallback-msg')) {
+                        const fallbackDiv = document.createElement('div');
+                        fallbackDiv.className = 'fallback-msg text-center p-4 text-xs font-bold text-slate-400';
+                        fallbackDiv.innerHTML = '<i class="fa-regular fa-image text-2xl mb-1 block"></i>画像が見つかりません';
+                        this.parentElement.appendChild(fallbackDiv);
+                    }
+                }
+            };
+
+            // 特徴リスト生成
+            const featuresList = document.getElementById('modal-features');
+            featuresList.innerHTML = '';
+            item.features.forEach(feat => {
+                const li = document.createElement('li');
+                li.className = 'flex items-start gap-2.5 text-xs sm:text-sm bg-slate-50/60 p-2.5 rounded-xl border border-slate-100';
+                li.innerHTML = `<i class="fa-solid fa-circle-check ${item.checkColor || 'text-brand-600'} text-base mt-0.5 shrink-0"></i> <span>${feat}</span>`;
+                featuresList.appendChild(li);
             });
 
-            resultBox.classList.remove('hidden');
+            // おすすめ対象者リスト
+            const targetsContainer = document.getElementById('modal-targets-container');
+            const targetsList = document.getElementById('modal-targets');
+            if (item.targets && item.targets.length > 0) {
+                targetsList.innerHTML = '';
+                item.targets.forEach(tgt => {
+                    const li = document.createElement('li');
+                    li.className = 'flex items-center gap-2 p-2.5 bg-slate-50 rounded-xl text-xs font-bold text-slate-800 border border-slate-100';
+                    li.innerHTML = `<i class="fa-solid fa-user-check ${item.checkColor || 'text-brand-500'} shrink-0 text-sm"></i> <span>${tgt}</span>`;
+                    targetsList.appendChild(li);
+                });
+                targetsContainer.classList.remove('hidden');
+            } else {
+                targetsContainer.classList.add('hidden');
+            }
+
+            // 詳細サイズ表
+            const sizeTableContainer = document.getElementById('modal-size-table-container');
+            const sizeTableBody = document.getElementById('modal-size-table-body');
+            const sizeNote = document.getElementById('modal-size-note');
+            if (item.sizeTable && item.sizeTable.length > 0) {
+                sizeTableBody.innerHTML = '';
+                item.sizeTable.forEach(row => {
+                    const tr = document.createElement('tr');
+                    tr.className = 'hover:bg-slate-50/80 transition-colors';
+                    tr.innerHTML = `
+                        <td class="p-3 font-bold text-brand-700 bg-brand-50/40">${row.size}</td>
+                        <td class="p-3 font-bold text-slate-800 whitespace-nowrap">${row.range}</td>
+                    `;
+                    sizeTableBody.appendChild(tr);
+                });
+                sizeNote.innerText = item.sizeNote || '';
+                sizeTableContainer.classList.remove('hidden');
+            } else {
+                sizeTableContainer.classList.add('hidden');
+            }
+
+            // 仕様リスト
+            const specsContainer = document.getElementById('modal-specs-container');
+            const specsDiv = document.getElementById('modal-specs');
+            if (item.specs && item.specs.length > 0) {
+                specsDiv.innerHTML = '';
+                item.specs.forEach(s => {
+                    const p = document.createElement('p');
+                    p.className = 'flex items-baseline gap-2 border-b border-slate-200/50 pb-1.5 last:border-0 last:pb-0';
+                    p.innerHTML = `<strong class="text-slate-900 shrink-0 font-bold min-w-[80px]">${s.label}:</strong> <span class="text-slate-700">${s.val}</span>`;
+                    specsDiv.appendChild(p);
+                });
+                specsContainer.classList.remove('hidden');
+            } else {
+                specsContainer.classList.add('hidden');
+            }
+
+            // モーダルを表示
+            const modal = document.getElementById('product-modal');
+            const card = document.getElementById('product-modal-card');
+            
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            card.classList.remove('scale-95');
+            card.classList.add('scale-100');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // モーダルを閉じる関数
+        function closeProductModal() {
+            const modal = document.getElementById('product-modal');
+            const card = document.getElementById('product-modal-card');
+            
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            card.classList.remove('scale-100');
+            card.classList.add('scale-95');
+            document.body.style.overflow = '';
+        }
+
+        // イベントハンドラー初期化（DOM読み込み時）
+        document.addEventListener('DOMContentLoaded', () => {
+            // 背景クリックでモーダルを閉じる
+            const modal = document.getElementById('product-modal');
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeProductModal();
+                }
+            });
+
+            // ESCキーでモーダルを閉じる
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closeProductModal();
+                }
+            });
+
+            // お悩み診断ロジック
+            const runDiagnosisBtn = document.getElementById('run-diagnosis');
+            if (runDiagnosisBtn) {
+                runDiagnosisBtn.addEventListener('click', () => {
+                    const checkboxes = document.querySelectorAll('#quiz-options input[type="checkbox"]:checked');
+                    const values = Array.from(checkboxes).map(cb => cb.value);
+
+                    const resultContainer = document.getElementById('diagnosis-result');
+                    const resultItems = document.getElementById('result-items');
+
+                    if (values.length === 0) {
+                        resultItems.innerHTML = '<p class="text-xs text-amber-800 font-bold bg-amber-50 p-3 rounded-xl border border-amber-200"><i class="fa-solid fa-triangle-exclamation mr-1"></i> 項目を1つ以上選択してください。</p>';
+                        resultContainer.classList.remove('hidden');
+                        return;
+                    }
+
+                    const recommended = new Set();
+                    if (values.includes('pelvis') || values.includes('heavy_back')) {
+                        recommended.add('core-belt');
+                    }
+                    if (values.includes('light_back')) {
+                        recommended.add('kokansetsu');
+                    }
+                    if (values.includes('calf')) {
+                        recommended.add('calf');
+                    }
+
+                    resultItems.innerHTML = '';
+                    recommended.forEach(key => {
+                        const item = productDetails[key];
+                        if (item) {
+                            const div = document.createElement('div');
+                            div.className = 'flex items-center justify-between p-3.5 bg-white rounded-xl border border-brand-200 shadow-xs gap-3';
+                            div.innerHTML = `
+                                <div>
+                                    <span class="text-[10px] font-bold text-brand-600 bg-brand-50 px-2 py-0.5 rounded">${item.category}</span>
+                                    <h5 class="font-extrabold text-sm text-slate-900 mt-0.5">${item.name.split(' ')[1] || item.name}</h5>
+                                </div>
+                                <button onclick="openProductModal('${key}')" class="shrink-0 bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs px-3.5 py-2 rounded-lg transition shadow-xs">
+                                    詳細を見る
+                                </button>
+                            `;
+                            resultItems.appendChild(div);
+                        }
+                    });
+
+                    resultContainer.classList.remove('hidden');
+                });
+            }
         });
     </script>
 </body>
